@@ -69,9 +69,9 @@ def clrSpeed():
 
 
 def loopRun(tx, rx, ti):
-    setSpeed(tx, rx)
-    time.sleep(ti)
     try:
+        setSpeed(tx, rx)
+        time.sleep(ti)
         clrSpeed()
     except:
         print("An expected exception. Safe, don't worry : )")
