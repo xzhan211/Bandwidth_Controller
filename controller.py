@@ -70,6 +70,7 @@ def clrSpeed():
 
 def loopRun(tx, rx, ti):
     try:
+        print("tx: " + repr(tx) + "  rx: " + repr(rx) + "  time: " + repr(ti))
         setSpeed(tx, rx)
         time.sleep(ti)
         clrSpeed()
